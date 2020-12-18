@@ -1,0 +1,161 @@
+:root{
+    --body:rgba(23, 141, 161, 0.836);
+}
+*{
+margin:0;
+padding:0;
+}
+.btn-prime{
+    display: inline-block;
+    transition: var(--hover);
+    background: var(--body);
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 16px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+.btn-prime:hover{
+    opacity: .8;
+}
+.logo{
+    color: #fff;
+    font-family: Montserrat,poppins,Roboto;
+}
+.menu a{
+    color: var(--white);
+    opacity: .5;
+    font-size: 1.3rem;
+    transition: var(--hover);
+}
+.menu a:hover{
+    opacity: 1;
+}
+main{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 1)),url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg) no-repeat center/cover;
+}
+.abt .imgbox{
+    border-right: 6px solid var(--body);
+}
+h1{
+    letter-spacing: 2px;
+    background: linear-gradient(rgb(255, 247, 247),transparent);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+.s .grid-2{
+    gap: 0;
+}
+
+.controll{
+    padding: 20px;
+    flex-basis: 70%;
+    margin-right: 6px;
+}
+button{
+    flex-basis: fill;
+}
+.d-flex{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.w75 i{
+    font-size: 3rem;
+    color: #fff;
+}
+footer{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 1)), url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/demo-image-02.jpg)no-repeat center/cover;
+    padding-top: 140px!important;
+}
+footer h2{
+    color: #fff;
+    text-transform: capitalize;
+}
+footer h5{
+    color: #aaa;
+}
+.social a{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #222;
+    margin: 0 10px;
+    text-align: center;
+}
+.social a i{
+    line-height: 50px;
+    color: rgb(148, 148, 148);
+    font-size: 1.2rem;
+}
+.social a:hover i{
+    color: #fff;
+}
+/*custom*/
+img{
+    vertical-align: middle;
+}
+.h100{
+    height: 100vh;
+}
+.thin{
+    font-weight: 100!important;
+}
+.dark{
+    color: #fff!important;
+    background: rgb(0, 0, 0);
+}
+.LS-2{
+    letter-spacing: 2px;
+}
+hr{
+    border: none;
+    outline: none;
+    width: 10px;
+    height: 3px;
+    background: var(--body);
+    margin: 2rem 0;
+}
+.card i{
+    font-size: 1.5rem;
+    color: var(--body);
+}
+@media(max-width:768px){
+    html{
+        font-size: 14px;
+    }
+    .btn-prime{
+        padding: 10px 25px;
+        font-size: 1.2rem;
+    }
+    .navBar{
+        flex-direction: column;
+    }
+    .menu a{
+        padding: 0;
+    }
+    main .banner h1{
+        font-size: 3.2rem;
+    }
+    footer .d-flex{
+        display: flex;
+        width: 100%!important;
+    }
+    footer .d-flex > *{
+        flex-basis: 100%;
+    }
+    .d-flex > input{
+        margin:10px 0;
+    }
+    .order{
+        order: -1;
+    }
+    .order-2{
+        order: 2;
+    }
+}
